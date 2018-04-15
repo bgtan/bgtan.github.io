@@ -1,0 +1,327 @@
+body { 
+	background: #ffffff;
+	width: 1350px;
+}
+
+#navi ul {
+	margin-left: 165px;
+	padding: 0px;
+	list-style-type: none;
+	text-align: center;
+	display: inline-block;
+}
+
+#navi ul li {
+	font-family: "Quicksand", sans-serif;
+	float: left;
+	width: 200px;
+	height: 40px;
+	background: #87bdb1;
+	opacity: 0.999;
+	line-height: 40px;
+	font-size: 13px;
+}
+
+#navi ul li a {
+	font-family: "Quicksand", sans-serif;
+	text-decoration: none;
+	color: #ffffff;
+	display: block;
+}
+
+#navi ul li a:hover {
+	background: #aaccb1;
+}
+
+#navi ul li ul li {
+	display: none;
+}
+
+#navi ul li:hover ul li {
+	margin-left: -165px;
+	display: inline-block;
+}
+
+#home {
+	display: grid;
+	grid-template-columns: 40% 40%;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	grid-gap: 50px;
+	grid-auto-rows: minmax(10px, auto);
+	align-items: start;
+	margin-left: 175px;
+	margin-top: 20px;
+}
+
+#homeslide img {
+	padding: 10px 10px;
+	width: 100%;
+	height: 100%;
+}
+
+#aboutimg {
+	margin-top: 35px;
+}
+
+#latestnewstitle {
+	font-family: "Varela Round", sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+#latestnewstab {
+	margin-left: 100px;
+}
+
+#latestnewstab a:link, a:visited, a:active {
+	text-decoration: none;
+	color: #2d2d29;
+}
+
+#latestnewstab a:hover {
+	text-decoration: none;
+	color: #87bdb1;
+}
+
+.latestnewsimg {
+	width: 50%;
+	padding: 5px auto;
+	border: 5px solid #eeeeee;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.latestnewsimg:hover {
+	filter: blur(1px);
+}
+
+.latestnewsdate {
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	margin-left: -5%;
+	margin-bottom: -15px;
+}
+
+.latestnewsname {
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	text-align: left;
+	margin-left: -10%;
+	margin-right: 25%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#homesocialmedia {
+	text-align: center;
+}
+
+#homelogos {
+	width: 45px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#nextsched {
+	font-family: "Varela Round", cursive;
+	font-size: 15px;
+	text-align: center;
+	color: #2d2d29;
+	background: #e8e8e8;
+	border: 2px dashed #92c7a3;
+	margin-left: 450px;
+	margin-right: 450px;
+	padding-bottom: 30px;
+	margin-top: 25px;
+}
+
+#nextsched img {
+	padding: 10px 20px;
+}
+
+#pastschedtext {
+	font-family: "Varela Round", sans-serif;
+	font-size: 15px;
+	text-align: center;
+	color: #2d2d29;
+}
+
+#pastsched {
+	font-family: "Varela Round", sans-serif;
+	font-size: 15px;
+	text-align: center;
+	margin-left: 170px;
+	margin-right: 170px;
+	margin-top: -2.5%;
+}
+
+#pastsched td {
+	padding: 3px 40px;
+}
+
+.schedhighlights a:link, a:visited, a:active {
+	text-decoration: none;
+	color: #2d2d29;
+}
+
+.schedhighlights a:hover {
+	text-decoration: none;
+	color: #87bdb1;
+}
+
+.highlightsvid {
+	padding: 15px;
+}
+
+.highlightstitle {
+	font-family: "Varela Round", sans-serif;
+	font-size: 15px;
+	color: #2d2d29;
+}
+
+.profilewrap {
+	width: 700px;
+	padding: 20px;
+	display: inline-block;
+	border: 2px dashed #eeeeee;
+	margin-top: 30px;
+	margin-left: 305px;
+}
+
+.profileimg {
+	float: left;
+	width: 300px;
+	line-height: 180%;
+	border: 10px solid #eeeeee;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.profilename ul li {
+	margin-left: 5px;
+	font-family: "Varela Round", sans-serif;
+	font-size: 28px;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	display: block;
+	text-decoration: none;
+	color: #2d2d29;
+}
+
+.gamertag {
+	font-family: "Kaushan Script", cursive;
+	font-size: 85px;
+	margin-top: -20px;
+	margin-bottom: 8px;
+	color: #68b3af;
+}
+
+.socialmedia {
+	text-align: center;
+	font-family: "Varela Round", sans-serif;
+	font-size: 20px;
+	color: #2d2d29;
+}
+
+.logos {
+	width: 64px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#newsgrid {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-gap: 20px;
+	grid-auto-rows: minmax(10px, auto);
+	align-items: start;
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+#newsgrid div {
+	padding: 5px 10px;
+	background: #e8e8e8;
+	color: #2d2d29;
+}
+
+.newsphoto {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
+	height: auto;
+}
+
+.newsphoto:hover {
+	filter: blur(3px);
+}
+
+.newstag {
+	font-family: "Montserrat", sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.newstitle {
+	padding-top: -10px;
+	margin-top: -20px;
+}
+
+.newstitle a:link, a:visited, a:active {
+	text-decoration: none;
+	color: #2d2d29;
+}
+
+.newstitle a:hover {
+	text-decoration: none;
+	color: #87bdb1;
+}
+
+.newsdate {
+	font-family: "Montserrat", sans-serif;
+	font-size: 12px;
+	text-align: right;
+	margin-top: -20px;
+}
+
+#contact {
+	font-family: "Rubik", sans-serif;
+	margin-left: 20%;
+	margin-top: 20px;
+	display: inline-block;
+	width: 750px;
+	padding: 25px;
+	background: #e8e8e8;
+	border: 2px dashed #92c7a3;
+}
+
+#contact textarea {
+	width: 100%;
+}
+
+#contact a {
+	font-family: "Rubik", sans-serif;
+	text-decoration: none;
+	background: #87bdb1;
+	display: inline-block;
+	float: right;
+	text-align: right;
+	padding: 10px 15px;
+}
+
+#contact a:hover {
+	background: #aaccb1;
+}

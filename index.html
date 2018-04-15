@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta name = "viewport" content = "width: device-width, initial-scale: 1">
+
+<link href="https://fonts.googleapis.com/css?family=Acme|Alegreya|Bree+Serif|Crete+Round|Montserrat|Nunito|Oxygen|PT+Sans|PT+Serif|Patua+One|Quicksand|Roboto|Rubik|Slabo+27px|Varela+Round" rel="stylesheet">
+
+<link href = "CSS.css" type = "text/css" rel = "stylesheet">
+
+<head>
+	<title>Kingzone Dragon X</title>
+	
+</head>
+
+<body>
+
+<div id = "navi">
+<ul>
+	<li><a><u>HOME</u></a></li>
+	<li><a>KINGZONE</a>
+		<ul>
+			<li><a href = "Schedule.html">SCHEDULE</a></li>
+			<li><a href = "Highlights.html">HIGHLIGHTS</a></li>
+			<li><a href = "Coaches.html">COACHES</a></li>
+		</ul>
+	</li>
+	<li><a>PLAYERS</a>
+		<ul>
+			<li><a href = "Khan.html">Khan</a></li>
+			<li><a href = "Peanut.html">Peanut</a></li>
+			<li><a href = "Cuzz.html">Cuzz</a></li>
+			<li><a href = "Bdd.html">Bdd</a></li>
+			<li><a href = "PraY.html">PraY</a></li>
+			<li><a href = "GorillA.html">GorillA</a></li>
+		</ul>
+	</li>
+	<li><a href = "News.html">NEWS</a></li>
+	<li><a href = "Contact.html">CONTACT</a></li>
+</ul>
+</div>
+
+<div id = "home">
+	<div id = "homeslide">
+		<center>
+		<img class = "mySlides" src = "slideshow1.jpg">
+		<img class = "mySlides" src = "slideshow2.jpg">
+		<img class = "mySlides" src = "slideshow3.jpg">
+		<img class = "mySlides" src = "slideshow4.jpg">
+		<img class = "mySlides" src = "slideshow5.jpg">
+		<img class = "mySlides" src = "slideshow6.jpg">
+		<img class = "mySlides" src = "slideshow7.jpg">
+		<button class = "displayleft" onclick = "plusDivs(-1)">&#10094;</button>
+		<button class = "displayright" onclick = "plusDivs(1)">&#10095;</button>
+		</center>
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				}
+				x[slideIndex-1].style.display = "block";  
+			}
+		</script>
+		<script>
+			var slideIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+				  x[i].style.display = "none"; 
+				}
+				slideIndex++;
+				if (slideIndex > x.length) {slideIndex = 1} 
+				x[slideIndex-1].style.display = "block"; 
+				setTimeout(carousel, 5000);
+			}
+		</script>
+	</div>
+
+	<div id = "about">
+		<center><img id = "aboutimg" src = "kingzone.png" width = "80%"></center>
+		<br>Kingzone Dragon X is a professional League of Legends team based in South Korea.
+		<br><br>In January 2018, the Chinese company Kingzone acquired the roster of Longzhu Gaming and re-branded the roster as Kingzone Dragon X.
+	</div>
+</div>
+
+<br><br><br>
+
+<div id = "latestnews">
+	<div id = "latestnewstitle">LATEST NEWS</div>
+	<br>
+	<div id = "latestnewstab">
+		<table>
+			<tr>
+				<td><center><a href = "https://www.invenglobal.com/articles/4806" target = "_blank"><img class = "latestnewsimg" src = "news1.jpeg"></a></center></td>
+				<td><div class = "latestnewsdate">APRIL 11, 2018</div>
+				<br><div class = "latestnewsname"><a href = "https://www.invenglobal.com/articles/4806" target = "_blank">All Eight Eliminated LCK Teams Predict Kingzone Dragon X to Win the Finals Against Afreeca Freecs</a></div></td>
+			</tr>
+			<tr>
+				<td><center><a href = "https://www.invenglobal.com/articles/4672" target = "_blank"><img class = "latestnewsimg" src = "news2.jpeg"></a></center></td>
+				<td><div class = "latestnewsdate">MARCH 24, 2018</div>
+				<br><div class = "latestnewsname"><a href = "https://www.invenglobal.com/articles/4672" target = "_blank">KZ PraY: "I think Afreeca Freecs will come to the finals. There's no reason, it just feels like they will."</a></div></td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<br><br><br>
+
+<div id = "homesocialmedia">
+	<a href = "https://www.facebook.com/imteam" target = "_blank"><img id = "homelogos" src = "facebook.png"></a>
+	<a href = "http://www.twitter.com/kingzonedx" target = "_blank"><img id = "homelogos" src = "twitter.png"></a>
+	<a href = "https://www.weibo.com/longzhuteam" target = "_blank"><img id = "homelogos" src = "weibo.png"></a>
+</div>
+
+</body>
+
+</html>
